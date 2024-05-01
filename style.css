@@ -4,10 +4,13 @@
     font-size: 20px
 }
 .navbar {
-    width: 100vw;
+    width: 100%;
     background-color: #59D9A1;
-    padding-left: 30px;
+    padding-left: 10px;
     padding-right: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
 }
   
 .logo {
@@ -15,6 +18,8 @@
 }
   
 .nav-links {
+    display: flex;
+    flex-wrap: wrap;
     list-style: none;
 }
   
@@ -44,6 +49,9 @@
 }
 
 .sidebar {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
     background-color: #242457;
     color: white;
     padding: 3rem;
@@ -53,7 +61,15 @@ footer img {
     width: 3%;
 }
 
+.main-content{
+    display: flex;
+    width: 100%;
+    flex-flow: row wrap;
+}
 .flex-main {
+    display: flex;
+    flex-flow: row nowrap;
+    align-content: space-evenly;
     background-color: #F5F5F5;
     width: 100%;
     padding-right: 2.5rem;
@@ -72,6 +88,8 @@ footer img {
 }
 
 footer {
+    display: flex;
+    justify-content: space-between;
     width: 100%;
     padding: 1rem;
     background-color: #59D9A1;
